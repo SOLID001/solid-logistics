@@ -1,0 +1,385 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* main styling */
+body{
+    line-height: 1.7em;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    padding-bottom: 20px;
+}
+
+p{
+    margin: 10px, 0;
+}
+
+/* utility classes */
+.container{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.text-primary{
+    color: rgb(23, 165, 118);
+}
+.lead{
+    font-size: 20px;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    color: rgb(127, 243, 204);
+    background: #333;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn{
+    0% {opacity: 0;}
+    100%    {opacity: 1;}
+}
+
+.btn:hover{
+    background: rgb(23, 165, 118);
+    color: white;
+}
+
+.btn-light{
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-light{
+    background: #333;
+    color: #f4f4f4;
+}
+
+.bg-primary{
+    background: rgb(23, 165, 118);
+}
+
+
+
+/* navigation */
+#navbar{
+    background: #333;
+    color: white;
+    overflow: auto;
+}
+
+#navbar a{
+    color: white;
+}
+
+#navbar h1{
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul{
+    list-style: none;
+    float: right;
+}
+
+#navbar li{
+    float: left;
+}
+
+#navbar li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar li a:hover,
+#navbar li a.current{
+    background: #444;
+    color: rgb(23, 165, 118);
+}
+
+/* showcase */
+ #showcase{
+    background: url('/travel/travel\ 2.jpeg') no-repeat center center/cover;
+    height: 600px;
+ }
+ 
+
+.showcase-content{
+    color: white;
+    text-align: center;
+    padding-top: 0px;
+ }
+
+ .showcase-content h1{
+    font-size: 60px;
+    line-height: 1.2em;
+    position: relative;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+ }
+@keyframes heading{
+    0%  {top: 0px;}
+    100%    {top: 180px}
+}
+
+
+ .showcase-content p{
+    padding-bottom: 20px;
+    line-height: 1.7em;
+    padding-top: 170px;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    animation: paragraph;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+ }
+ @keyframes paragraph{
+    0% {left: -500px;}
+    100% {left: 0px;}
+ }
+
+ 
+
+ /* home-info */
+ #home-info{
+    height: 400px;
+ }
+
+ .info-img{
+    float: left;
+    width: 50%;
+    background: url('/travel/travel\ 6.jpeg') no-repeat center center/cover;
+    min-height: 100%;
+    min-width:min-content;
+    position: relative;
+    animation: infoImg;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+ }
+ @keyframes infoImg{
+    0%  {left: -500px;}
+    100%    {left: 0px;}
+ }
+
+ .info-content{
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 80px;
+    overflow: hidden;
+    background: #333;
+    color: white;
+    position: relative;
+    animation: infoContent;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+ }
+ @keyframes infoContent{
+    0%  {right: -500px;}
+    100%    {right: 0px;}
+ }
+ 
+
+
+ .info-content p{
+    padding-bottom: 30px;
+    font-size: 20px
+ }
+ .info-content h2{
+    opacity: 0;
+    animation-name: h2p;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+ }
+ @keyframes h2p{
+    0%  {opacity: 0;}
+    100%    {opacity: 1;}
+ }
+ .shakur{
+    opacity: 0;
+    animation-name: h2p;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+ }
+ @keyframes h2p{
+    0%  {opacity: 0;}
+    100%    {opacity: 1;}
+ }
+
+
+
+ /* features */
+.box{
+    float: left;
+    width: 33.333%;
+    padding: 50px;
+    text-align: center;
+    height: 250px;
+    color: white;
+}
+#box1{
+    position: relative;
+    animation: box1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes box1{
+    0%  {left: -500px;}
+    100%    {left: 0px;}
+}
+#box3{
+    position: relative;
+    animation: box3;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes box3{
+    0%  {right: -500px;}
+    100%    {right: 0px;}
+}
+#box2{
+    position: relative;
+    animation: box2;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes box2{
+    0%  {opacity: 0;}
+    100%    {opacity: 1;}
+}
+
+/* About Page */
+.info-left{
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+.info-right{
+    float: right;
+    width: 50%;
+    min-height: 100%;    
+}
+.info-right img{
+    border-radius: 20px;
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+#about-info{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+/* about info effects */
+/* .info-left{
+    position: relative;
+    animation: leftbox;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes leftbox{
+    0% {left: -200px;}
+    100% {left: 0px;}
+}
+
+.info-right{
+    position: relative;
+    animation: rightbox;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes rightbox{
+    0% {right: -200px;}
+    100% {right: 0px;}
+} */
+
+
+/* testimonials */
+#testimonials{
+    height: 600px;
+    background: url(/travel/showcase.jpg) no-repeat center center/cover;
+    padding-top: 100px;
+    
+}
+
+#testimonials h2{
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+
+#testimonials .testimonial{
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+#testimonials .testimonial img {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 30%;
+    
+}
+
+.testimonial p{
+    color: white;
+}
+/* register-form */
+#contact-form .form-group{
+    margin-bottom: 20px;
+}
+
+#contact-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+#context-form input, 
+#contact-form textarea{
+    width: 100%;
+    width: 10px;
+    border: 1px #fff solid;
+
+}
+#contact-form input:focus,
+#contat
+
+/* footer */
+#main-footer{
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+ 
