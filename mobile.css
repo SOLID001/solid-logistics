@@ -1,0 +1,59 @@
+ #navbar .logo{
+    float: none;
+    text-align: center;
+ }
+
+ #navbar ul, #navbar ul li{
+    float: none;
+ }
+ #navbar li a{
+    padding: 5px;
+    border-bottom: #444 dotted 1px;
+ }
+
+ /* home-info */
+ .info-img{
+    display: none;
+ }
+
+ .info-content{
+    float: none;
+    width: 100%;
+ }
+
+ /* boxex */
+ .box{
+    float: none;
+    width: 100%;
+ }
+
+ #box1{
+    background: rgb(23, 165, 118) ;
+ }
+#box2{
+    background: #444;
+    color: white;
+}
+#box3{
+    background: rgb(23, 165, 118);
+}
+
+/* about */
+#about-info .info-right{
+    float: none;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#about-info info-left{
+    float: none;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+
+}
+
+.l-heading{
+    text-align: center;
+}
+
